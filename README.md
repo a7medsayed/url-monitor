@@ -59,16 +59,26 @@ $ npm test
 $ http://localhost:3000
 ```
 
-| API | Description |
+| API | Method | Request Body| Response |Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/signup**         | sign up users  body: {email , password}                                                          |
-| **/login**                  | log in verified users  body: {email , password} 
+| **/signup**     |  POST |  {email , password} | message: "please verifiy your email" | sign up users              |
+| **/login**      |  POST |  {email , password} | token | log in users  
 
 ### all the following apis have to use generated authorization token.
 
-| API | Description |
+| API | Method | Request Body| Response |Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/check/create**                 | allow users to add url check   body: {}  |
+| **/check/create**      | POST |  {    
+    "name": "4Check",
+    "url": "https://www.coursera.org/",
+    "interval": "1",
+    "userId": "61f1f46a45a354aee094baec",
+    ,
+      "tags": [
+          "test"
+      ]
+    
+} |        created check      | allow users to add url check   body: {}  |
 | **/check/edit/:id**        | allow users to edit url check  body: {}  
 | **/check/pause/:id**        | allow users to pause url check   
 | **/check/resume/:id**      | allow users to resume url check  
