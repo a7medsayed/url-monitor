@@ -1,13 +1,13 @@
 # node-express-jwt-auth
 
 ## General info
-This project is simple user authentication/authorization.
-* sign user up 
-* authenticate user (jwt)
-* log user in (start user session)
-* log user out (end user session)
-* simple example of user roles and permissions (middleware)
-* simple client frontend included to test this services.
+This project is simple URL monitor.
+* sign user up with email verification
+* verfy your email
+* sign in with verified email
+* use generated authorization token
+* you can add , edit  , pause , resume and delete url check
+* you will receieve an email whenever the url goes from up to down or vs versus.
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version 8.0.0
@@ -16,7 +16,7 @@ This project is simple user authentication/authorization.
 # Getting started
 - Clone the repository
 ```
-git clone  https://github.com/a7medsayed/node-express-jwt-auth.git
+git clone  https://github.com/a7medsayed/url-monitor.git
 ```
 - Install dependencies
 ```
@@ -33,9 +33,6 @@ The folder structure of this app is explained below:
 | **__test__**                 | Contains test files.  |
 | **controllers**        | Contains  Controllers define functions to serve various express routes. 
 | **services**        | Contains  services define functions to serve various express routes/controllers. 
-| **views**        | Contains  application views files.
-| **public**        | serving static resources.
-| **shared**        | Contains common and shared files.
 | **middlewares**      | Express middlewares which process the incoming requests before handling them down to the routes.
 | **routes**           | Contain all express routes, separated by module/area of application                       
 | **models**           | Models define schemas that will be used in storing and retrieving data from Application database  |
@@ -56,6 +53,19 @@ $ npm start
 ```sh
 $ npm test
 ```
-Navigate to `http://localhost:3000`
+
+| API | Description |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| **/signup**         | sign up users  body: {email , password}                                                          |
+| **/login**                  | log in verified users  body: {email , password} 
+all the following apis have to use generated authorization token.
+| **/checks/create**                 | allow users to add url check   body: {}  |
+| **/checks/edit/:id**        | allow users to edit url check  body: {}  
+| **/checks/pause/:id**        | allow users to pause url check   
+| **/checks/resume/:id**      | allow users to resume url check  
+| **/checks/delete/:id**           | allow users to delete url check                       
+| **/checks/report/**           | allow users to get report about their checks     |
+| **/checks/report/:tag**        | allow users to get report about their checks   by specific tag                                                          |
+
 
 
