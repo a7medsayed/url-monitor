@@ -68,17 +68,7 @@ $ http://localhost:3000
 
 | API | Method | Request Body| Response |Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/check/create**      | POST |  {    
-    "name": "4Check",
-    "url": "https://www.coursera.org/",
-    "interval": "1",
-    "userId": "61f1f46a45a354aee094baec",
-    ,
-      "tags": [
-          "test"
-      ]
-    
-} |        created check      | allow users to add url check   body: {}  |
+| **/check/create**      | POST |  {  "name": "4Check","url": "https://www.coursera.org/", "interval": "1", "userId": "61f1f46a45a354aee094baec","tags": [  "test"] } | created check      | allow users to add url check   body: {}  |
 | **/check/edit/:id**        | allow users to edit url check  body: {}  
 | **/check/pause/:id**        | allow users to pause url check   
 | **/check/resume/:id**      | allow users to resume url check  
