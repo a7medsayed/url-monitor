@@ -1,4 +1,4 @@
-# node-express-jwt-auth
+# url-monitor
 
 ## General info
 This project is simple URL monitor.
