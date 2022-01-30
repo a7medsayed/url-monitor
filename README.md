@@ -64,15 +64,22 @@ $ http://localhost:3000
 | **/signup**         | sign up users  body: {email , password}                                                          |
 | **/login**                  | log in verified users  body: {email , password} 
 
-$ all the following apis have to use generated authorization token.
+### all the following apis have to use generated authorization token.
 
+| API | Description |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
 | **/checks/create**                 | allow users to add url check   body: {}  |
 | **/checks/edit/:id**        | allow users to edit url check  body: {}  
 | **/checks/pause/:id**        | allow users to pause url check   
 | **/checks/resume/:id**      | allow users to resume url check  
 | **/checks/delete/:id**           | allow users to delete url check                       
 | **/checks/report/**           | allow users to get report about their checks     |
-| **/checks/report/:tag**        | allow users to get report about their checks   by specific tag                                                          |
+| **/checks/report/:tag**        | allow users to get report about their checks   by specific tag 
+
+
+|                  swagger path              |    Description                                                        
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| **/api-docs**        | APIs Documentation                                                         |
 
 
 
