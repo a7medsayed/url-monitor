@@ -59,22 +59,22 @@ $ npm test
 $ http://localhost:3000
 ```
 
-| API | Method | Request Body| Response |Description |
+| API | Method  |Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/signup**     |  POST |  {email , password} | message: "please verifiy your email" | sign up users              |
-| **/login**      |  POST |  {email , password} | token | log in users  
+| **/signup**     |  POST  | sign up users              |
+| **/login**      |  POST  | log in users  
 
 ### all the following apis have to use generated authorization token.
 
-| API | Method | Request Body| Response |Description |
+| API | Method  |Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/check/create**      | POST |  {  "name": "4Check","url": "https://www.coursera.org/", "interval": "1", "userId": "61f1f46a45a354aee094baec","tags": [  "test"] } | created check      | allow users to add url check   body: {}  |
-| **/check/edit/:id**        | allow users to edit url check  body: {}  
-| **/check/pause/:id**        | allow users to pause url check   
-| **/check/resume/:id**      | allow users to resume url check  
-| **/check/delete/:id**           | allow users to delete url check                       
-| **/check/report/**           | allow users to get report about their checks     |
-| **/check/report/:tag**        | allow users to get report about their checks   by specific tag 
+| **/check/create**      | POST | allow users to add url check    |
+| **/check/edit/:id**     | POST   | allow users to edit url check  body: {}  
+| **/check/pause/:id**     | POST   | allow users to pause url check   
+| **/check/resume/:id**    | POST  | allow users to resume url check  
+| **/check/delete/:id**    | DELETE       | allow users to delete url check                       
+| **/check/report/**        | GET   | allow users to get report about their checks     |
+| **/check/report/:tag**      | GET  | allow users to get report about their checks   by specific tag 
 
 
 |                  swagger path              |    Description                                                        
