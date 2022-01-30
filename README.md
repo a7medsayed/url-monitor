@@ -53,11 +53,19 @@ $ npm start
 $ npm test
 ```
 
+### Base url
+
+```sh
+$ http://localhost:3000
+```
+
 | API | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
 | **/signup**         | sign up users  body: {email , password}                                                          |
 | **/login**                  | log in verified users  body: {email , password} 
-all the following apis have to use generated authorization token.
+
+$ all the following apis have to use generated authorization token.
+
 | **/checks/create**                 | allow users to add url check   body: {}  |
 | **/checks/edit/:id**        | allow users to edit url check  body: {}  
 | **/checks/pause/:id**        | allow users to pause url check   
