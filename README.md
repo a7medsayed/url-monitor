@@ -1,13 +1,12 @@
 # url-monitor
 
 ## General info
-This project is simple URL monitor.
-* sign user up with email verification
-* verfy your email
-* sign in with verified email
-* use generated authorization token
-* you can add , edit  , pause , resume and delete url check
-* you will receieve an email whenever the url goes from up to down or vs versus.
+This project is simple URL monitor application.
+users of this app can:
+* sign up with email verification.
+* sign in with verified email.
+* add , edit  , pause , resume and delete url check.
+* receieve an email whenever the url goes from up to down or vs versus.
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version 8.0.0
