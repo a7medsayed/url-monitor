@@ -68,13 +68,13 @@ $ http://localhost:3000
 
 | API | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/checks/create**                 | allow users to add url check   body: {}  |
-| **/checks/edit/:id**        | allow users to edit url check  body: {}  
-| **/checks/pause/:id**        | allow users to pause url check   
-| **/checks/resume/:id**      | allow users to resume url check  
-| **/checks/delete/:id**           | allow users to delete url check                       
-| **/checks/report/**           | allow users to get report about their checks     |
-| **/checks/report/:tag**        | allow users to get report about their checks   by specific tag 
+| **/check/create**                 | allow users to add url check   body: {}  |
+| **/check/edit/:id**        | allow users to edit url check  body: {}  
+| **/check/pause/:id**        | allow users to pause url check   
+| **/check/resume/:id**      | allow users to resume url check  
+| **/check/delete/:id**           | allow users to delete url check                       
+| **/check/report/**           | allow users to get report about their checks     |
+| **/check/report/:tag**        | allow users to get report about their checks   by specific tag 
 
 
 |                  swagger path              |    Description                                                        
