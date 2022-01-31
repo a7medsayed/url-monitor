@@ -71,7 +71,7 @@ $ http://localhost:3000
 | API | Method  |Description |
 | ------------------------ | ---------------------------|------------------------------------------------------------------ |
 | **/check/create**      | POST | allow users to add url check    |
-| **/check/edit/:id**     | POST   | allow users to edit url check  
+| **/check/edit/:id**     | PUT   | allow users to edit url check  
 | **/check/pause/:id**     | POST   | allow users to pause url check   
 | **/check/resume/:id**    | POST  | allow users to resume url check  
 | **/check/delete/:id**    | DELETE       | allow users to delete url check                       
