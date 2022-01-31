@@ -22,7 +22,7 @@ git clone  https://github.com/a7medsayed/url-monitor.git
 npm install
 ```
   
- ## Project Structure (MVC)
+ ## Project Structure.
 The folder structure of this app is explained below:
 
 | Name | Description |
@@ -69,7 +69,7 @@ $ http://localhost:3000
 | API | Method  |Description |
 | ------------------------ | ---------------------------|------------------------------------------------------------------ |
 | **/check/create**      | POST | allow users to add url check    |
-| **/check/edit/:id**     | POST   | allow users to edit url check  body: {}  
+| **/check/edit/:id**     | POST   | allow users to edit url check  
 | **/check/pause/:id**     | POST   | allow users to pause url check   
 | **/check/resume/:id**    | POST  | allow users to resume url check  
 | **/check/delete/:id**    | DELETE       | allow users to delete url check                       
