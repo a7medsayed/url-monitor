@@ -8,20 +8,6 @@ users of this app can:
 * add , edit  , pause , resume and delete url check.
 * receieve an email whenever the url goes from up to down or vs versus.
 
-# Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) version 8.0.0
-
-
-# Getting started
-- Clone the repository
-```
-git clone  https://github.com/a7medsayed/url-monitor.git
-```
-- Install dependencies
-```
-npm install
-```
-  
  ## Project Structure.
 The folder structure of this app is explained below:
 
@@ -39,6 +25,22 @@ The folder structure of this app is explained below:
 | package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)   | tsconfig.json            | Config settings for compiling source code only written in TypeScript   
 
 
+
+
+# Pre-requisites
+- Install [Node.js](https://nodejs.org/en/) version 8.0.0
+
+
+# Getting started
+- Clone the repository
+```
+git clone  https://github.com/a7medsayed/url-monitor.git
+```
+- Install dependencies
+```
+npm install
+```
+  
 ## Usage
 
 ### Serving the app
