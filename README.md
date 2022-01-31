@@ -60,14 +60,14 @@ $ http://localhost:3000
 ```
 
 | API | Method  |Description |
-| ------------------------ | --------------------------------------------------------------------------------------------- |
+| ------------------------ | ---------------------|------------------------------------------------------------------------ |
 | **/signup**     |  POST  | sign up users              |
 | **/login**      |  POST  | log in users  
 
 ### all the following apis have to use generated authorization token.
 
 | API | Method  |Description |
-| ------------------------ | --------------------------------------------------------------------------------------------- |
+| ------------------------ | ---------------------------|------------------------------------------------------------------ |
 | **/check/create**      | POST | allow users to add url check    |
 | **/check/edit/:id**     | POST   | allow users to edit url check  body: {}  
 | **/check/pause/:id**     | POST   | allow users to pause url check   
