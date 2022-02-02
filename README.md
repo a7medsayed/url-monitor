@@ -63,14 +63,14 @@ $ http://localhost:3000
 
 | API | Method  |Description |
 | ------------------------ | ---------------------|------------------------------------------------------------------------ |
-| **/signup**     |  POST  | sign up users              |
-| **/login**      |  POST  | log in users  
+| **/signup**     |  POST  | sign up users     body: {"email": example@example.com , "password": "123456"}         |
+| **/login**      |  POST  | log in users     body: {"email": example@example.com , "password": "123456"}
 
 ### all the following apis have to use generated authorization token.
 
 | API | Method  |Description |
 | ------------------------ | ---------------------------|------------------------------------------------------------------ |
-| **/check/create**      | POST | allow users to add url check    |
+| **/check/create**      | POST | allow users to add url check     body: {"name": "4Check", "url": "https://www.coursera.org/","interval": "1", "userId": "61f1f46a45a354aee094baec","tags":["best"]}  |
 | **/check/edit/:id**     | PUT   | allow users to edit url check  
 | **/check/pause/:id**     | POST   | allow users to pause url check   
 | **/check/resume/:id**    | POST  | allow users to resume url check  
