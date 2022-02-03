@@ -81,7 +81,7 @@ $ http://localhost:3000
 
 |                  swagger path              |    Description                                                        
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **/api-docs**        | APIs Documentation                                                         |
+| **/api-docs**        |  just /signup  documented to give an example of swagger documentation                                                 |
 
 
 
